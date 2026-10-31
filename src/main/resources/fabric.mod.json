@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "zenith",
+  "version": "${version}",
+  "name": "Zenith Client",
+  "description": "PvP utility client: HUD, keystrokes, CPS, zoom, fullbright, crosshair editor and more. Open menu: Right Shift.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["com.zenith.client.ZenithClient"] },
+  "mixins": [{ "config": "zenith.mixins.json", "environment": "client" }],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
